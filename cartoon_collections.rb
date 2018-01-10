@@ -9,29 +9,9 @@ end
 def long_planeteer_calls(array)
   array.any? {|i| i.length>4}
 end
-#
-#
-#   i = 0
-# 	while i < array.length
-# 		if array[i].length > 4
-# 			return true
-# 		else
-# 			return false
-# 		end
-# 		i +=1
-# 	end
-# end
+
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  counter = 0
-  while counter < array.length
-	  array.each do |i|
-	  	if cheese_types.include?(i)
-	  		return i
-	  	end
-	  	counter +=1
-	  	end
-	  	return nil
-	  end
+  array.find {|i| cheese_types.include?(i)}
 end
