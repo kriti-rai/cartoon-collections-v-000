@@ -24,10 +24,6 @@ def find_the_cheese(array)
   while counter < array.length
 	  array.each do |i|
 	  	if cheese_types.include?(i)
-  counter = 0
-  while counter < array.length
-	  array.each do |i|
-	  	if cheese_types.include?(i)
 	  		return i
 	  	end
 	  	counter +=1
