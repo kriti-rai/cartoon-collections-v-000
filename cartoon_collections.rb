@@ -20,17 +20,14 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-<<<<<<< HEAD
   counter = 0
   while counter < array.length
 	  array.each do |i|
 	  	if cheese_types.include?(i)
-=======
   counter = 0
   while counter < array.length
 	  array.each do |i|
 	  	if cheese_types.include?(i)
->>>>>>> 5489832392cd68c459ff0895c4a20797a99fa8f0
 	  		return i
 	  	end
 	  	counter +=1
