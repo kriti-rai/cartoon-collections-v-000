@@ -3,10 +3,7 @@ def roll_call_dwarves(array)# code an argument here
 end
 
 def summon_captain_planet(array)# code an argument here
-  string = array.join("! ")
-  string <<"!"
-  new_array = string.split(" ")
-  new_array.map {|i| i.capitalize}
+  array.map {|i| i.capitalize + "!"}
 end
 
 def long_planeteer_calls(array)
@@ -23,10 +20,17 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
+<<<<<<< HEAD
   counter = 0
   while counter < array.length
 	  array.each do |i|
 	  	if cheese_types.include?(i)
+=======
+  counter = 0
+  while counter < array.length
+	  array.each do |i|
+	  	if cheese_types.include?(i)
+>>>>>>> 5489832392cd68c459ff0895c4a20797a99fa8f0
 	  		return i
 	  	end
 	  	counter +=1
